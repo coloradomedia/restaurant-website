@@ -1,0 +1,35 @@
+html{
+    background-image: url(img/background.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 150rem;
+    z-index: -1;
+    position: fixed;
+    margin: 0;
+    padding: 0;
+}
+
+.left-bg img{
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+.right-bg img{
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+.welcome-section{
+    color: #fff;
+    text-align: center;
+    position: relative;
+    top: 40vh;
+    font-family: arial;
+    text-transform: uppercase;
+    font-size: 60px;
+}
