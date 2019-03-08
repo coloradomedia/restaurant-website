@@ -10,18 +10,28 @@ html{
     padding: 0;
 }
 
-.left-bg img{
-    height: 100vh;
-    position: fixed;
+.basil{
+    position: absolute;
     left: 0;
     top: 0;
 }
 
-.right-bg img{
-    height: 100vh;
-    position: fixed;
+.rosemary{
+    position: absolute;
     top: 0;
     right: 0;
+}
+
+.orange{
+    position: absolute;
+    top: 40rem;
+    right: 0;
+}
+
+.tomato{
+    position: absolute;
+    top: 40rem;
+    left: 0;
 }
 
 .welcome-section{
