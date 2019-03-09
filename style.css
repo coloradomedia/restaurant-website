@@ -9,61 +9,119 @@ html{
     position: fixed;
     font-size: 10px;
     font-family: 'Amatic SC', cursive;
+    margin: 0 auto;
 }
 
-.basil{
-    width: 280px;
-    position: absolute;
-    left: 12rem;
-    top: 8rem;
-}
+@media only screen and (min-width: 1280px){
+    header{
+        text-align: center;
+        position: relative;
+        margin: 0 auto;
+    }
 
-.rosemary{
-    width: 280px;
-    position: absolute;
-    top: 0;
-    right: 0;
-}
+    .basil{
+        position: absolute;
+        width: 280px;
+        margin-left: -75rem;
+        top: 8rem;
+    }
 
-.orange{
-    width: 280px;
-    position: absolute;
-    top: 45rem;
-    right: -8em;
-}
+    .rosemary{
+        width: 280px;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
 
-.tomato{
-    width: 280px;
-    position: absolute;
-    top: 40rem;
-    left: 0;
-}
+    .orange{
+        width: 280px;
+        position: absolute;
+        top: 45rem;
+        right: -8em;
+    }
 
-.welcome-section{
-    color: #fff;
-    text-align: center;
-    position: relative;
-    top: 5rem;
-    text-transform: uppercase;
-    font-size: 100px;
-    /* font-weight: bold; */
-}
+    .tomato{
+        width: 280px;
+        position: absolute;
+        top: 40rem;
+        left: 0;
+    }
 
-.zig{
-    width: 45%;
-    position: absolute;
-    top: 16rem;
-    left: 28%;
-}
+    .welcome-section{
+        color: #fff;
+        text-align: center;
+        position: relative;
+        top: 5rem;
+        text-transform: uppercase;
+        font-size: 100px;
+        /* font-weight: bold; */
+    }
 
-.main-photo{
-    width: 30%;
-    border: 20px solid #fff;
-    transform: rotate(-3deg);
-    position: absolute;
-    top: 30rem;
-    left: 65rem;
-    -webkit-box-shadow: 0px 0px 133px 10px rgba(0,0,0,0.75);
-       -moz-box-shadow: 0px 0px 133px 10px rgba(0,0,0,0.75);
-            box-shadow: 0px 0px 133px 10px rgba(0,0,0,0.75);
+    .zig{
+        width: 45%;
+        position: relative;
+        top: 5rem;
+    }
+
+    .container{
+        text-align: center;
+    }
+
+    .main-photo{
+        position: relative;
+        top: 15rem;
+    }
+
+    .main-photo img{
+        width: 30%;
+        border: 15px solid #fff;
+        transform: rotate(-2deg);
+        /* position: absolute; */
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        top: 20rem;
+        -webkit-box-shadow: 0px 0px 133px 10px rgba(0,0,0,0.75);
+           -moz-box-shadow: 0px 0px 133px 10px rgba(0,0,0,0.75);
+                box-shadow: 0px 0px 133px 10px rgba(0,0,0,0.75);
+        z-index: 99;
+    }
+
+    .main-photo h1{
+        position: relative;
+        top: -1rem;
+        font-size: 6rem;
+        color: #fff;
+        transform: rotate(-2deg);
+        z-index: 100;
+    }
+    
+    .main-photo .zig2{
+        border: none;
+        box-shadow: none;
+        position: relative;
+        top: 5rem;
+        padding-left: 2rem;
+        z-index: 100;
+    }
+    
+    .title{
+        color: #fff;
+        font-size: 4rem;
+        position: relative;
+        padding-left: 1rem;
+        transform: rotate(-2deg);
+        z-index: 100;
+    }
+    
+    .description{
+        color: #fff;
+        padding-top: 1.5rem;
+        padding-left: 2rem;
+        font-size: 4rem;
+        transform: rotate(-2deg);
+        word-wrap: wrap;
+        width: 60rem;
+        margin: 0 auto;
+    }
 }
