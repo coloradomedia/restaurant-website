@@ -2,8 +2,9 @@
 @import url('reset.css');
 
 html{
-    background: url(img/bg.jpg) top center;
+    background: url(img/bg-blur.jpg) top center;
     background-size: 100%;
+    background-repeat: repeat-y;
     /* background-position: fixed; */
     width: 100%;
     min-height: 150vh;
@@ -13,12 +14,109 @@ html{
     overflow-x: hidden;
 }
 
-@media only screen and (min-width: 1280px){
+@media only screen and (min-width: 320px){
     header{
         text-align: center;
         position: relative;
         margin: 0 auto;
     }
+    .welcome-section{
+        color: #fff;
+        text-align: center;
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+    .welcome-section h1{
+        position: relative;
+        top: 1rem;
+        text-transform: uppercase;
+        font-size: 5rem;
+        /* font-weight: bold; */
+    }
+
+    .welcome-section ul{
+        font-size: 2.5rem;
+        position: relative;
+        display: flex;
+        justify-content: space-around;
+        top: 3rem;
+    }
+    
+    .welcome-section ul li a{
+        color: #fff;
+    }
+
+    .zig{
+        width: 95%;
+        position: relative;
+        top: -1rem;
+    }
+
+    .container{
+        text-align: center;
+    }
+
+    .main-photo{
+        position: relative;
+        top: 5rem;
+    }
+
+    .main-photo img{
+        width: 80%;
+        border: 5px solid #fff;
+        transform: rotate(-2deg);
+        /* position: absolute; */
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        top: 20rem;
+        -webkit-box-shadow: 0px 0px 133px 10px rgba(0,0,0,0.75);
+           -moz-box-shadow: 0px 0px 133px 10px rgba(0,0,0,0.75);
+                box-shadow: 0px 0px 133px 10px rgba(0,0,0,0.75);
+        z-index: 99;
+    }
+
+    .main-photo h1{
+        position: relative;
+        top: -1rem;
+        font-size: 3rem;
+        color: #fff;
+        transform: rotate(-2deg);
+        z-index: 100;
+    }
+    
+    .main-photo .zig2{
+        border: none;
+        box-shadow: none;
+        position: relative;
+        top: 5rem;
+        width: 90%;
+        /* padding-left: 2rem; */
+        z-index: 100;
+    }
+    
+    .title{
+        color: #fff;
+        font-size: 4rem;
+        position: relative;
+        transform: rotate(-2deg);
+        z-index: 100;
+    }
+    
+    .description{
+        color: #fff;
+        padding-top: 1.5rem;
+        font-size: 2.5rem;
+        transform: rotate(-2deg);
+        width: 28rem;
+        margin: 0 auto;
+    }
+}
+
+
+
+@media only screen and (min-width: 900px){
 
     .basil{
         position: absolute;
@@ -30,9 +128,10 @@ html{
     
     .rosemary{
         width: 280px;
+        margin: 0 auto;
         position: absolute;
         top: 40rem;
-        margin-left: 95rem;
+        left: 4rem;
         z-index: -1;
     }
     
@@ -53,97 +152,62 @@ html{
     }
 
     .welcome-section{
-        color: #fff;
-        text-align: center;
         width: 50%;
-        margin: 0 auto;
     }
     
     .welcome-section h1{
-        position: relative;
         top: 5rem;
-        text-transform: uppercase;
         font-size: 100px;
-        /* font-weight: bold; */
     }
 
     .welcome-section ul{
         font-size: 4rem;
-        position: relative;
-        display: flex;
-        justify-content: space-around;
         top: 8rem;
     }
     
-    .welcome-section ul li a{
+    /* .welcome-section ul li a{
         color: #fff;
-    }
+    } */
 
     .zig{
         width: 45%;
-        position: relative;
         top: 2rem;
     }
 
-    .container{
-        text-align: center;
-    }
+    /* .container{
+    } */
 
     .main-photo{
-        position: relative;
         top: 15rem;
     }
 
     .main-photo img{
         width: 30%;
         border: 15px solid #fff;
-        transform: rotate(-2deg);
-        /* position: absolute; */
-        display: flex;
-        flex-direction: column;
         margin: 0 auto;
         top: 20rem;
-        -webkit-box-shadow: 0px 0px 133px 10px rgba(0,0,0,0.75);
-           -moz-box-shadow: 0px 0px 133px 10px rgba(0,0,0,0.75);
-                box-shadow: 0px 0px 133px 10px rgba(0,0,0,0.75);
-        z-index: 99;
     }
 
     .main-photo h1{
-        position: relative;
         top: -1rem;
         font-size: 6rem;
-        color: #fff;
-        transform: rotate(-2deg);
-        z-index: 100;
     }
     
     .main-photo .zig2{
-        border: none;
-        box-shadow: none;
-        position: relative;
         top: 5rem;
+        width: 30%;
         padding-left: 2rem;
-        z-index: 100;
     }
     
     .title{
-        color: #fff;
         font-size: 4rem;
-        position: relative;
         padding-left: 1rem;
-        transform: rotate(-2deg);
-        z-index: 100;
     }
     
     .description{
-        color: #fff;
         padding-top: 1.5rem;
         padding-left: 2rem;
         font-size: 3.5rem;
-        transform: rotate(-2deg);
-        word-wrap: wrap;
         width: 60rem;
-        margin: 0 auto;
     }
 }
