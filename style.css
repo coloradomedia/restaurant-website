@@ -3,13 +3,14 @@
 
 html{
     background: url(img/bg.jpg) top center;
-    background-size: cover;
+    background-size: 100%;
+    /* background-position: fixed; */
     width: 100%;
-    min-height: 150rem;
-    position: fixed;
+    min-height: 150vh;
     font-size: 10px;
     font-family: 'Amatic SC', cursive;
     margin: 0 auto;
+    overflow-x: hidden;
 }
 
 @media only screen and (min-width: 1280px){
@@ -22,34 +23,43 @@ html{
     .basil{
         position: absolute;
         width: 280px;
-        margin-left: -75rem;
+        margin-left: -35rem;
         top: 8rem;
+        z-index: -1;
     }
-
+    
     .rosemary{
         width: 280px;
         position: absolute;
-        top: 0;
-        right: 0;
+        top: 40rem;
+        margin-left: 95rem;
+        z-index: -1;
     }
-
+    
     .orange{
         width: 280px;
         position: absolute;
         top: 45rem;
         right: -8em;
+        z-index: -1;
     }
-
+    
     .tomato{
         width: 280px;
         position: absolute;
         top: 40rem;
         left: 0;
+        z-index: -1;
     }
 
     .welcome-section{
         color: #fff;
         text-align: center;
+        width: 50%;
+        margin: 0 auto;
+    }
+    
+    .welcome-section h1{
         position: relative;
         top: 5rem;
         text-transform: uppercase;
@@ -57,10 +67,22 @@ html{
         /* font-weight: bold; */
     }
 
+    .welcome-section ul{
+        font-size: 4rem;
+        position: relative;
+        display: flex;
+        justify-content: space-around;
+        top: 8rem;
+    }
+    
+    .welcome-section ul li a{
+        color: #fff;
+    }
+
     .zig{
         width: 45%;
         position: relative;
-        top: 5rem;
+        top: 2rem;
     }
 
     .container{
@@ -118,7 +140,7 @@ html{
         color: #fff;
         padding-top: 1.5rem;
         padding-left: 2rem;
-        font-size: 4rem;
+        font-size: 3.5rem;
         transform: rotate(-2deg);
         word-wrap: wrap;
         width: 60rem;
