@@ -129,6 +129,14 @@ html{
         text-align: center;
         padding-bottom: 2rem;
     }
+    footer a{
+        color: #ffffff;
+    }
+    footer a:hover{
+        color: #87cefa;
+        font-size: 2.6rem;
+        transition: linear .3s;
+    }
 /* } */
 
 
@@ -237,5 +245,13 @@ html{
         padding-left: 2rem;
         font-size: 3.5rem;
         width: 60rem;
+    }
+
+    footer{
+        font-size: 3rem;
+    }
+
+    footer a:hover{
+        font-size: 3.2rem;
     }
 }
