@@ -12,6 +12,7 @@ html{
     font-family: 'Amatic SC', cursive;
     margin: 0 auto;
     overflow-x: hidden;
+    position: relative;
 }
 
 .basil, .rosemary, .orange, .tomato{
@@ -115,6 +116,18 @@ html{
         transform: rotate(-2deg);
         width: 28rem;
         margin: 0 auto;
+    }
+    footer{
+        width: 100%;
+        color: #fff;
+        font-size: 2.5rem;
+        /* font-weight: bold; */
+        letter-spacing: .1rem;
+        position: absolute;
+        bottom: 0;
+        margin: 0 auto;
+        text-align: center;
+        padding-bottom: 2rem;
     }
 /* } */
 
