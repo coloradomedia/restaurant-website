@@ -14,11 +14,11 @@ html{
     overflow-x: hidden;
 }
 
-.bg-image{
+.basil, .rosemary, .orange, .tomato{
     display: none;
 }
 
-@media only screen and (min-width: 320px){
+/* @media only screen and (min-width: 320px){ */
     header{
         text-align: center;
         position: relative;
@@ -116,53 +116,58 @@ html{
         width: 28rem;
         margin: 0 auto;
     }
-}
+/* } */
 
 
 
 @media only screen and (min-width: 900px){
     .bg-image{
         display: block;
-        max-width: 10rem;
+        max-width: 100%;
         margin: 0 auto;
         text-align: center;
         position: relative;
     }
 
     .basil{
+        display: block;
         position: absolute;
         width: 280px;
-        left: -65rem;
+        left: -30rem;
         top: 8rem;
         z-index: -1;
     }
     
     .rosemary{
+        display: block;
         position: absolute;
         width: 300px;
-        right: -90rem;
+        right: 5%;
         top: 28rem;
         z-index: -1;
     }
     
     .orange{
+        display: block;
         position: absolute;
         width: 280px;
-        left: -75rem;
+        /* left: -75rem; */
         top: 85rem;
         z-index: -1;
     }
     
     .tomato{
+        display: block;
         position: absolute;
         width: 280px;
-        right: -65rem;
+        right: 5%;
         top: 100rem;
         z-index: -1;
     }
 
     .welcome-section{
         width: 50%;
+        position: relative;
     }
     
     .welcome-section h1{
