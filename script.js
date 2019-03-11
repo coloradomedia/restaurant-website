@@ -3,10 +3,12 @@ $(document).ready(function() {
 		var scrollTop = $(window).scrollTop();
 		if (scrollTop > 1) {
             $("header").addClass("sticky-menu");
-            $(".main-section").addClass("padding");
+            $("header").removeClass("animation2");
+            $("header").removeClass("animation");
 		} else {
-			$("header").removeClass("sticky-menu");
-			$(".main-section").removeClass("padding");
+            $("header").removeClass("sticky-menu");
+            $("header").addClass("animation2");
+            $("header").addClass("animation");
 		}
 	});
 });

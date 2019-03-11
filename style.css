@@ -21,9 +21,11 @@ html{
 
 /* @media only screen and (min-width: 320px){ */
     header{
+        width: 100%;
         text-align: center;
-        position: relative;
-        margin: 0 auto;
+        position: absolute;
+        transition: all .5s linear;
+        z-index: 100;
     }
     .welcome-section{
         color: #fff;
@@ -37,8 +39,6 @@ html{
         top: 1rem;
         text-transform: uppercase;
         font-size: 5rem;
-        /* font-weight: bold; */
-        transition: all 0.7s linear;
     }
 
     .welcome-section ul{
@@ -47,11 +47,14 @@ html{
         display: flex;
         justify-content: space-around;
         top: 3rem;
-        /* transition: 0.7s all; */
     }
-    
+
     .welcome-section ul li a{
         color: #fff;
+    }
+
+    .welcome-section ul li a:hover{
+        background-color: rgba(255, 153, 0, 0.7);
     }
 
     .zig{
@@ -62,6 +65,8 @@ html{
 
     .main-section{
         text-align: center;
+        position: relative;
+        top: 10rem;
     }
 
     .main-photo{
@@ -156,8 +161,7 @@ html{
         display: block;
         position: absolute;
         width: 280px;
-        left: -30rem;
-        top: 8rem;
+        left: 15rem;
         z-index: -1;
     }
     
@@ -195,40 +199,133 @@ html{
     
     .welcome-section h1{
         top: 5rem;
-        font-size: 100px;
+        font-size: 10rem;
     }
 
     .welcome-section ul{
         font-size: 4rem;
         top: 8rem;
     }
-    
-    /* .welcome-section ul li a{
-        color: #fff;
-    } */
+    .welcome-section a{
+        padding-left: 2rem;
+        padding-right: 2rem;
+        padding-top: .5rem;
+        padding-bottom: .5rem;
+    }
 
     .zig{
         width: 45%;
         top: 2rem;
+        transition: .5s opacity .4s;
     }
 
-    /* .main-section{
-    } */
+    @keyframes navbar{
+        0%{
+            top: 5rem;
+            left: 0rem;
+            font-size: 10rem;
+        }
+        100%{
+            font-size: 5rem;
+        }
+    }
+
+    @keyframes navbar-reverse{
+        0%{
+            top: 1rem;
+            left: -50rem;
+            font-size: 5rem;
+        }
+        100%{
+            top: 5rem;
+            left: 0rem;
+            font-size: 10rem;
+        }
+    }
+
+    @keyframes menu{
+        0%{
+            top: 8rem;
+            left: 0;
+        }
+        100%{
+            top: -3.5rem;
+            left: 15rem;
+        }
+    }
+
+    @keyframes menu-reverse{
+        0%{
+            top: -3.5rem;
+            left: 15rem;
+        }
+        100%{
+            top: 8rem;
+            left: 0;
+        }
+    }
+    
+    .sticky-menu{
+        position: fixed;
+        top: 0;
+        /* width: 100%; */
+        height: 7.5rem;
+        background: rgba(0, 0, 0, 0.8);
+        z-index: 100;
+    }
+
+    .sticky-menu .welcome-section h1{
+        top: 1rem;
+        left: -50rem;
+        font-size: 5rem;
+        animation: navbar .4s linear;
+    }
+
+    .animation h1{
+        animation: navbar-reverse .4s linear;
+    }
+
+    .sticky-menu .welcome-section ul{
+        top: -3.5rem;
+        left: 15rem;
+        animation: menu .4s linear;
+    }
+
+    .animation2 ul{
+        animation: menu-reverse .4s linear;
+    }
+
+    .sticky-menu .welcome-section ul li a{
+        padding-top: 1rem;
+        padding-bottom: 1.5rem;
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+
+    .sticky-menu .welcome-section ul li a:hover{
+        background-color: rgba(255, 153, 0, 0.7);
+    }
+
+    .sticky-menu .zig{
+        opacity: 0;
+        transition: .3s opacity;
+    }
 
     .main-photo{
-        top: 15rem;
+        top: 18rem;
     }
 
     .main-photo img{
         width: 30%;
         border: 15px solid #fff;
-        margin: 0 auto;
-        top: 20rem;
+        /* margin: 0 auto; */
+        /* top: 20rem; */
     }
 
     .main-photo h1{
         top: -1rem;
         font-size: 6rem;
+        z-index: 2;
     }
     
     .main-photo .zig2{
@@ -243,10 +340,10 @@ html{
     }
     
     .description{
+        width: 60rem;
         padding-top: 1.5rem;
         padding-left: 2rem;
         font-size: 3.5rem;
-        width: 60rem;
     }
 
     footer{
@@ -257,48 +354,4 @@ html{
         font-size: 3.2rem;
     }
 
-    header{
-        /* transition: 0.7s all; */
-    }
-    
-    .sticky-menu{
-        position: fixed;
-        top: 0;
-        width: 100%;
-        height: 7.5rem;
-        /* background: rgba(255, 153, 0, .9); */
-        background: rgba(0, 0, 0, 0.8);
-        z-index: 1;
-    }
-
-    .padding{
-        padding-top: 15rem;
-    }
-
-    .sticky-menu .welcome-section{
-        width: 70%;
-    }
-
-    .sticky-menu .welcome-section h1{
-        font-size: 5rem;
-        transition: 0.7s all;
-        top: 1rem;
-        float: left;
-    }
-
-    .sticky-menu .welcome-section ul{
-        top: 1.5rem;
-        padding-left: 8rem;
-        transition: 0.7s all;
-    }
-    
-    .sticky-menu .welcome-section ul li a{
-        /* transition: 0.7s all; */
-    }
-
-    .sticky-menu .zig{
-        display: none;
-        /* opacity: 1;
-        transition: 0.7s opacity; */
-    }
 }
