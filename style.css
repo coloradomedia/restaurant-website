@@ -141,8 +141,9 @@ html{
     }
     footer a:hover{
         color: #87cefa;
-        font-size: 2.6rem;
+        /* font-size: 2.6rem; */
         transition: linear .3s;
+        transform: scale(1.2);
     }
 /* } */
 
